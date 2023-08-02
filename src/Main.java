@@ -1,4 +1,5 @@
 import figure.*;
+import figure.algebraicCurves.Circle;
 import figure.quadrileteral.Rectangle;
 import figure.quadrileteral.Square;
 import figure.triangle.*;
@@ -24,9 +25,12 @@ public class Main {
         Quadrilateral anyQuadrilateral = new Quadrilateral(a,b,c,d);
         Rectangle rectangle = new Rectangle(a,b);
         Square square = new Square(a);
+        Circle circle = new Circle(a);
         System.out.println(rectangle.GetPerimeter());
         System.out.println(anyQuadrilateral.GetPerimeter());
         System.out.println(square.GetSquare());
-        System.out.println(Figure.count +" "+Triangle.triangleCount);
+        System.out.println(circle.GetPerimeter());
+        System.out.println(circle.GetSquare());
+        System.out.println(Figure.count +" "+Triangle.triangleCount+ " " + Quadrilateral.quadrlateralCount);
     }
 }
